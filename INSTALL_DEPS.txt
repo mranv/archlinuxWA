@@ -1,0 +1,37 @@
+To install all the dependencies required for building the Wazuh Agent package, you can use the following shell command. This command will install the dependencies using `pacman`, Arch Linux's package manager. Note that some dependencies are available from the AUR, and you'll need an AUR helper like `yay` to install those.
+
+First, let's install the dependencies available in the official repositories using `pacman`:
+
+```bash
+sudo pacman -S autoconf automake base-devel brotli cmake curl expect fakeroot gawk gcc gnupg inetutils libsigsegv libtool make nodejs perl python sudo
+```
+
+Next, let's handle the dependencies that might need to be installed from the AUR. If you don't have an AUR helper installed, you can install `yay` (Yet Another Yaourt) by following these steps:
+
+1. Install `git` if you don't have it already:
+    ```bash
+    sudo pacman -S git
+    ```
+
+2. Clone the `yay` repository:
+    ```bash
+    git clone https://aur.archlinux.org/yay.git
+    ```
+
+3. Navigate to the `yay` directory:
+    ```bash
+    cd yay
+    ```
+
+4. Build and install `yay`:
+    ```bash
+    makepkg -si
+    ```
+
+Once `yay` is installed, you can use it to install any remaining dependencies from the AUR:
+
+```bash
+yay -S autoconf-git automake-git brotli-git curl-quiche-git fakeroot-git fakeroot-tcp gawk-git busybox-coreutils gcc11 gcc-git gccrs-git gcc-snapshot gnupg-git gnupg-largekeys inetutils-git libsigsegv-git libtool-git make-git nodejs-lts-fermium nodejs-shared nodejs-git nodejs-lts-hydrogen nodejs-lts-iron perl-git python37 python311 python310 fake-sudo polkit-fakesudo sudo-git doas-sudo-shim doas-sudo-shim-minimal sudo-hg sudo-selinux fudo-git
+```
+
+This script will cover all the dependencies listed, whether they are in the official repositories or the AUR.
