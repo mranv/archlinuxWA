@@ -1,6 +1,9 @@
-# Wazuh Agent for Arch Linux
-
-## Overview
+<h1 align="center">
+<br>
+<img src=assets/morph_2.gif>
+<br>
+<strong>wazuh-agent installation for arch based linux distribution</strong>
+</h1>
 
 The Wazuh Agent is designed to protect Arch Linux systems with advanced threat prevention, detection, and response capabilities. This repository contains the PKGBUILD and necessary files to build and install the Wazuh Agent package from the Arch User Repository (AUR).
 
@@ -11,7 +14,7 @@ The Wazuh Agent is designed to protect Arch Linux systems with advanced threat p
 - **Description:** Wazuh Agent actively protects Arch Linux systems with advanced threat prevention, detection, and response capabilities.
 - **Upstream URL:** [Wazuh](https://wazuh.com/)
 - **Maintainer:** madara125 (MrHacker) at aur git.
-- **Contributor** Anubhav Gain (mranv)
+- **Contributor** [Anubhav Gain](https://mranv.github.io)
 
 ## Dependencies
 
@@ -45,8 +48,7 @@ The following dependencies are required for building the Wazuh Agent package:
 To get started, clone the repository:
 
 ```bash
-git clone https://github.com/mranv/wazuh-agent-archlinux
-cd wazuh-agent-archlinux
+git clone https://github.com/mranv/wazuh-agent-archlinux && cd wazuh-agent-archlinux
 ```
 
 ### Building the Package
@@ -95,4 +97,4 @@ If you encounter any issues or have suggestions for improvements, please report 
 
 ## Contact
 
-For any queries or support, you can contact the maintainer Anubhav Gain (@mranv).
+For any queries or support, you can contact the maintainer [Anubhav Gain](https://mranv.github.io).
